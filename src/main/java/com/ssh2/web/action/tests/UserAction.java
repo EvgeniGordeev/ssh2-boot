@@ -7,13 +7,14 @@ import org.apache.struts2.convention.annotation.ParentPackage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+import com.opensymphony.xwork2.ActionSupport;
 import com.ssh2.po.User;
 import com.ssh2.service.UserService;
 
 
 @Controller
 @ParentPackage(value = "ssh2-default")
-public class UserAction {
+public class UserAction extends ActionSupport{
 	@Autowired
 	private UserService userService;
 	
