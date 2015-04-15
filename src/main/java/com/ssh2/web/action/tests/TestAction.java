@@ -6,7 +6,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class TestAction extends ActionSupport{
 
-	@Action
+	@Action("showTest")
 	public String showTest() {
 		return SUCCESS;
 	}
