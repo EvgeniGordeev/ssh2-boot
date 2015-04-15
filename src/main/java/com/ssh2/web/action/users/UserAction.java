@@ -1,4 +1,4 @@
-package com.ssh2.web.action.tests;
+package com.ssh2.web.action.users;
 
 import java.util.List;
 
@@ -29,7 +29,7 @@ public class UserAction extends ActionSupport{
 
 	@Action("list")
 	public String list(){
-		users=userService.find(null);
+		users=userService.find("寮犱笁");
 		return SUCCESS;
 	}
 }
