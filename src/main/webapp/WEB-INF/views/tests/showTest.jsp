@@ -8,5 +8,7 @@
 </head>
 <body>
 	struts show test!
+	<br />
+	${message }
 </body>
 </html>
